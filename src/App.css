@@ -1,38 +1,99 @@
-.App {
+
+:root{
+  --primary-green:#aff5ba ;
+  --hover-green:#8efe9e ;
+  --dark-green:#57f86f; ;
+  --primary-blue: #7dd3fc;
+  --hover-blue:#38bdf8 ;
+  --dark-blue:#11adf5;
+  --primary-grey:#e7e5e4 ;
+  --hover-grey:#cac9c9 ;
+  --bluish-grey: #fcfcfd;
+}
+
+.App{
+  margin: 1rem 2rem;
+}
+h2{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navlink-btn{
+  text-decoration: none;
+  padding:0.4rem;
+  margin:1rem;
+  background-color:var(--primary-blue);
+  border-radius: 0.2rem;
+}
+.wishlist{
+  background-color:var(--primary-green) ;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navlink-btn:hover{
+  background-color:var(--hover-blue) ;
 }
+.wishlist:hover{
+  background-color: var(--hover-green);
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+a{
+  text-decoration: none;
+  color:black;
+}
+a:hover{
+  cursor: pointer;
+}
+nav{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+button{
+  border:0;
+  
+}
+button:hover{
+  cursor: pointer;
+
+}
+/* general button styling */
+.btn {
+  padding: 0.4rem;
+  margin: 1rem 1rem 0 0;
+  background-color: var(--primary-grey);
+  border-radius: 0.2rem;
+}
+.btn:hover{
+  background-color:var(--hover-grey) ;
+}
+.cart-btn{
+  background-color:var(--primary-blue);
+  
+}
+.cart-btn:hover{
+  background-color:var(--hover-blue);
+
+}
+.wish-btn{
+  background-color:var(--primary-green);
+}
+.wish-btn:hover{
+  background-color:var(--hover-green) ;
+
+}
+.prod-container{
+  padding:2rem;
+  margin:1rem;
+  background-color:var(--bluish-grey);
+  border-radius:1rem;
+}
+.cart-msg{
+  margin-top:2rem;
+  
+  color: var(--dark-blue);
+}
+.wish-msg{
+  margin-top:2rem;
+  color: #57f86f;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
